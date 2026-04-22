@@ -2,13 +2,24 @@
   "expo": {
     "name": "Briefday",
     "slug": "Briefday",
+    "extra": {
+      "firebaseApiKey": "AIzaSyBbXlrEQ4LVmOS5jZsBsWWNA_UG1cKMAEY",
+      "firebaseAuthDomain": "briefday-2026.firebaseapp.com",
+      "firebaseProjectId": "briefday-2026",
+      "firebaseStorageBucket": "briefday-2026.firebasestorage.app",
+      "firebaseMessagingSenderId": "321797685618",
+      "firebaseAppId": "1:321797685618:web:225aec2c8201f4753dddeb",
+      "eas": {
+        "projectId": "effb52d0-9a37-47ec-8825-63291ba8167b"
+      }
+    },
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,22 +28,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "@react-native-community/datetimepicker"
     ],
-    "extra": {
-      "eas": {
-        "projectId": "effb52d0-9a37-47ec-8825-63291ba8167b"
-      }
-    },
     "owner": "onyekaspen"
   }
 }

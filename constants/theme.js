@@ -1,13 +1,13 @@
 export const COLORS = {
-  primary: "#1C4D86", // Deep blue - main brand color
-  accent: "#B93E03", // Burnt orange - highlights & CTAs
-  background: "#F5F7FA", // Light grey - screen backgrounds
+  primary: "#1C4D86",
+  accent: "#B93E03",
+  background: "#F5F7FA",
   white: "#FFFFFF",
-  text: "#1A1A2E", // Near black - body text
-  textLight: "#6B7280", // Grey - secondary text
-  success: "#10B981", // Green - completed items
-  danger: "#EF4444", // Red - delete actions
-  border: "#E5E7EB", // Light border color
+  text: "#1A1A2E",
+  textLight: "#6B7280",
+  success: "#10B981",
+  danger: "#EF4444",
+  border: "#E5E7EB",
 };
 
 export const FONTS = {

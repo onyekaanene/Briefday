@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, ActivityIndicator, StyleSheet } from "react-native";
+import { View, ActivityIndicator, StyleSheet, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { onAuthStateChanged } from "firebase/auth";
@@ -22,19 +22,14 @@ export default function AppNavigator() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Firebase watches login state
-    // When user logs in → show tabs
-    // When user logs out → show auth screens
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setLoading(false);
     });
 
-    // Cleanup listener when component unmounts
     return unsubscribe;
   }, []);
 
-  // Show spinner while Firebase checks login state
   if (loading) {
     return (
       <View style={styles.loader}>
@@ -49,10 +44,8 @@ export default function AppNavigator() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {user ? (
-          // User is logged in — show the main app
           <Stack.Screen name="Main" component={TabNavigator} />
         ) : (
-          // User is NOT logged in — show auth flow
           <>
             <Stack.Screen name="Welcome" component={WelcomeScreen} />
             <Stack.Screen name="Login" component={LoginScreen} />
@@ -71,17 +64,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: COLORS.white,
-    gap: 12,
   },
   appName: {
     fontSize: FONTS.title,
     fontWeight: "800",
     color: COLORS.primary,
     letterSpacing: 1,
+    marginTop: 16,
   },
   credit: {
     fontSize: FONTS.small,
     color: COLORS.textLight,
     fontWeight: "500",
+    marginTop: 8,
   },
 });

@@ -1,6 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { COLORS } from "../constants/theme";
 
 import HomeScreen from "../screens/tabs/HomeScreen";
@@ -11,7 +12,6 @@ import TeamScreen from "../screens/tabs/TeamScreen";
 
 const Tab = createBottomTabNavigator();
 
-// This maps each screen name to an icon
 const getIcon = (routeName, focused) => {
   const icons = {
     Home: focused ? "home" : "home-outline",
@@ -24,10 +24,11 @@ const getIcon = (routeName, focused) => {
 };
 
 export default function TabNavigator() {
+  const insets = useSafeAreaInsets();
+
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
-        // Icon setup
         tabBarIcon: ({ focused, color, size }) => (
           <Ionicons
             name={getIcon(route.name, focused)}
@@ -35,21 +36,21 @@ export default function TabNavigator() {
             color={color}
           />
         ),
-        // Colors
         tabBarActiveTintColor: COLORS.accent,
         tabBarInactiveTintColor: COLORS.textLight,
-        // Style
         tabBarStyle: {
           backgroundColor: COLORS.white,
           borderTopColor: COLORS.border,
-          paddingBottom: 5,
-          height: 60,
+          borderTopWidth: 1,
+          paddingBottom: insets.bottom,
+          height: 60 + insets.bottom,
+          paddingTop: 8,
         },
         tabBarLabelStyle: {
           fontSize: 11,
           fontWeight: "600",
+          marginBottom: 4,
         },
-        // Header style
         headerStyle: {
           backgroundColor: COLORS.white,
           elevation: 0,

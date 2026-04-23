@@ -19,7 +19,7 @@ export default function WelcomeScreen({ navigation }) {
       {/* Top Section - Logo & Branding */}
       <View style={styles.topSection}>
         <View style={styles.logoContainer}>
-          <Text style={styles.logoText}>📅</Text>
+          <Text style={styles.logoText}>🗓️</Text>
         </View>
         <Text style={styles.appName}>Briefday</Text>
         <Text style={styles.tagline}>Your day. Organized. Intelligent.</Text>
@@ -43,20 +43,6 @@ export default function WelcomeScreen({ navigation }) {
         <PrimaryButton
           label="I already have an account"
           onPress={() => navigation.navigate("Login")}
-          variant="outline"
-          color={COLORS.primary}
-        />
-      </View>
-      {/* Bottom Section - Buttons */}
-      <View style={styles.bottomSection}>
-        <PrimaryButton
-          label="Get Started"
-          onPress={() => navigation.navigate('Signup')}
-          color={COLORS.accent}
-        />
-        <PrimaryButton
-          label="I already have an account"
-          onPress={() => navigation.navigate('Login')}
           variant="outline"
           color={COLORS.primary}
         />

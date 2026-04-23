@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CreditTag from "../../components/CreditTag";
 import {
   View,
   Text,
@@ -103,6 +104,7 @@ export default function ResetScreen({ navigation }) {
           </>
         )}
       </View>
+      <CreditTag />
     </SafeAreaView>
   );
 }
@@ -111,7 +113,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.white,
-    paddingHorizontal: SPACING.lg,
+    paddingHorizontal: SPACING.xl,
+    paddingBottom: SPACING.lg,
   },
   backButton: {
     marginTop: SPACING.md,
@@ -125,6 +128,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     paddingTop: SPACING.xl,
+    paddingBottom: SPACING.lg,
   },
   header: {
     marginBottom: SPACING.xl,

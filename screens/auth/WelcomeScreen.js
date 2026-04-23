@@ -1,4 +1,5 @@
 import React from "react";
+import CreditTag from "../../components/CreditTag";
 import {
   View,
   Text,
@@ -45,6 +46,21 @@ export default function WelcomeScreen({ navigation }) {
           variant="outline"
           color={COLORS.primary}
         />
+      </View>
+      {/* Bottom Section - Buttons */}
+      <View style={styles.bottomSection}>
+        <PrimaryButton
+          label="Get Started"
+          onPress={() => navigation.navigate('Signup')}
+          color={COLORS.accent}
+        />
+        <PrimaryButton
+          label="I already have an account"
+          onPress={() => navigation.navigate('Login')}
+          variant="outline"
+          color={COLORS.primary}
+        />
+        <CreditTag />
       </View>
     </SafeAreaView>
   );

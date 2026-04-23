@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../config/firebase";
-import { COLORS } from "../constants/theme";
+import { COLORS, FONTS } from "../constants/theme";
 
 // Auth screens
 import WelcomeScreen from "../screens/auth/WelcomeScreen";
@@ -39,6 +39,8 @@ export default function AppNavigator() {
     return (
       <View style={styles.loader}>
         <ActivityIndicator size="large" color={COLORS.primary} />
+        <Text style={styles.appName}>Briefday</Text>
+        <Text style={styles.credit}>Designed by Onyekachukwu Anene</Text>
       </View>
     );
   }
@@ -69,5 +71,17 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: COLORS.white,
+    gap: 12,
+  },
+  appName: {
+    fontSize: FONTS.title,
+    fontWeight: "800",
+    color: COLORS.primary,
+    letterSpacing: 1,
+  },
+  credit: {
+    fontSize: FONTS.small,
+    color: COLORS.textLight,
+    fontWeight: "500",
   },
 });

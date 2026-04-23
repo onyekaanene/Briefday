@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CreditTag from "../../components/CreditTag";
 import {
   View,
   Text,
@@ -126,6 +127,7 @@ export default function LoginScreen({ navigation }) {
               </TouchableOpacity>
             </View>
           </View>
+          <CreditTag />
         </ScrollView>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -139,8 +141,9 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     flexGrow: 1,
-    paddingHorizontal: SPACING.lg,
+    paddingHorizontal: SPACING.xl,
     paddingTop: SPACING.xl,
+    paddingBottom: SPACING.xl,
   },
   header: {
     marginBottom: SPACING.xl,
@@ -157,6 +160,7 @@ const styles = StyleSheet.create({
   },
   form: {
     marginBottom: SPACING.lg,
+    gap: 4,
   },
   label: {
     fontSize: FONTS.body,
@@ -204,7 +208,8 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   buttonSection: {
-    marginTop: SPACING.md,
+    marginTop: SPACING.lg,
+    paddingBottom: SPACING.lg,
   },
   signupRow: {
     flexDirection: "row",

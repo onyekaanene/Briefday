@@ -22,7 +22,7 @@ export default function WelcomeScreen({ navigation }) {
           <Text style={styles.logoText}>🗓️</Text>
         </View>
         <Text style={styles.appName}>Briefday</Text>
-        <Text style={styles.tagline}>Your day. Organized. Intelligent.</Text>
+        <Text style={styles.tagline}>Your day. Organized & Intelligent.</Text>
       </View>
 
       {/* Middle Section - Feature Highlights */}
@@ -69,10 +69,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: SPACING.lg,
   },
   topSection: {
-    flex: 2,
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
     paddingTop: SPACING.xl,
+    marginTop: SPACING.xl,
   },
   logoContainer: {
     width: 100,
@@ -81,7 +82,8 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.background,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: SPACING.md,
+    marginBottom: SPACING.sm,
+    marginTop: SPACING.sm,
     // Shadow for iOS
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
@@ -95,14 +97,14 @@ const styles = StyleSheet.create({
   },
   appName: {
     fontSize: FONTS.heading,
-    fontWeight: "800",
+    fontWeight: "900",
     color: COLORS.primary,
     letterSpacing: 1,
   },
   tagline: {
     fontSize: FONTS.body,
     color: COLORS.textLight,
-    marginTop: SPACING.sm,
+    marginTop: SPACING.xs,
     textAlign: "center",
   },
   featuresSection: {

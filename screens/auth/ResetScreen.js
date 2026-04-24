@@ -115,6 +115,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.white,
     paddingHorizontal: SPACING.xl,
     paddingBottom: SPACING.lg,
+    paddingTop: SPACING.xl,
   },
   backButton: {
     marginTop: SPACING.md,

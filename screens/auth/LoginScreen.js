@@ -147,6 +147,7 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: SPACING.xl,
+    marginTop: SPACING.xl,
   },
   title: {
     fontSize: FONTS.heading,

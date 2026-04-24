@@ -220,7 +220,7 @@ export default function TasksScreen() {
             </TouchableOpacity>
 
             <PrimaryButton
-              label={editingTask ? 'Update Task' : 'Add Task'}
+              title={editingTask ? 'Update Task' : 'Add Task'}
               onPress={handleSaveTask}
             />
           </View>
@@ -351,7 +351,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.5)',
   },
   modalContent: {
-    backgroundColor: COLORS.surface,
+    backgroundColor: COLORS.white,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     padding: SPACING.lg,

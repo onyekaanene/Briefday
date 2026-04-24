@@ -177,6 +177,7 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: SPACING.xl,
+    marginTop: SPACING.xl,
   },
   title: {
     fontSize: FONTS.heading,
@@ -190,7 +191,7 @@ const styles = StyleSheet.create({
   },
   form: {
     marginBottom: SPACING.lg,
-    gap: 4,
+    gap: 2,
   },
   label: {
     fontSize: FONTS.body,
@@ -235,7 +236,7 @@ const styles = StyleSheet.create({
   loginRow: {
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: SPACING.md,
+    marginTop: SPACING.sm,
   },
   loginText: {
     color: COLORS.textLight,

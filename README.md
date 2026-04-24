@@ -38,7 +38,8 @@ Briefday is that app. It combines **React Native, Expo, Firebase, and Claude AI*
 
 ### Main App
 ![Dashboard, AI Briefing & Tasks](screenshots/dashboard.png)
-![Meetings, Comming Soon](meetings/meetings.png)
+
+![Meetings, Comming Soon](screenshots/meetings.png)
 
 ---
 

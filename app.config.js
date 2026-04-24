@@ -31,6 +31,7 @@ export default {
     web: {
       favicon: "./assets/favicon.png",
     },
+    plugins: ["expo-font"],
     extra: {
       firebaseApiKey: process.env.FIREBASE_API_KEY,
       firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -40,7 +41,15 @@ export default {
       firebaseAppId: process.env.FIREBASE_APP_ID,
       anthropicApiKey: process.env.ANTHROPIC_API_KEY,
       eas: {
-        "projectId": "2082f804-40d8-464f-8554-67874af6ba95"}
+        projectId: "2082f804-40d8-464f-8554-67874af6ba95",
+      },
+    },
+    updates: {
+      url: "https://u.expo.dev/2082f804-40d8-464f-8554-67874af6ba95",
+    },
+    runtimeVersion: {
+      policy: "appVersion",
     },
   },
 };
+

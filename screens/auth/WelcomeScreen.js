@@ -133,6 +133,6 @@ const styles = StyleSheet.create({
   bottomSection: {
     flex: 1,
     justifyContent: "center",
-    paddingBottom: SPACING.lg,
+    paddingBottom: SPACING.xl,
   },
 });

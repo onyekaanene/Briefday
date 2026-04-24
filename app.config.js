@@ -39,6 +39,8 @@ export default {
       firebaseMessagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
       firebaseAppId: process.env.FIREBASE_APP_ID,
       anthropicApiKey: process.env.ANTHROPIC_API_KEY,
+      eas: {
+        "projectId": "2082f804-40d8-464f-8554-67874af6ba95"}
     },
   },
 };

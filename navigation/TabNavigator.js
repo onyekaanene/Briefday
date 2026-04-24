@@ -1,7 +1,10 @@
 import React from "react";
+import { TouchableOpacity, Alert } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { signOut } from "firebase/auth";
+import { auth } from "../config/firebase";
 import { COLORS } from "../constants/theme";
 
 import HomeScreen from "../screens/tabs/HomeScreen";
@@ -25,6 +28,13 @@ const getIcon = (routeName, focused) => {
 
 export default function TabNavigator() {
   const insets = useSafeAreaInsets();
+
+  const handleLogout = () => {
+    Alert.alert("Log Out", "Are you sure you want to log out?", [
+      { text: "Cancel", style: "cancel" },
+      { text: "Log Out", style: "destructive", onPress: () => signOut(auth) },
+    ]);
+  };
 
   return (
     <Tab.Navigator
@@ -63,6 +73,11 @@ export default function TabNavigator() {
           fontWeight: "700",
           fontSize: 18,
         },
+        headerRight: () => (
+          <TouchableOpacity onPress={handleLogout} style={{ marginRight: 16 }}>
+            <Ionicons name="log-out-outline" size={24} color={COLORS.danger} />
+          </TouchableOpacity>
+        ),
       })}
     >
       <Tab.Screen

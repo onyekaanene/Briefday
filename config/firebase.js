@@ -13,16 +13,12 @@ const firebaseConfig = {
   appId: Constants.expoConfig.extra.firebaseAppId,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Auth with AsyncStorage so login persists
-// This means the user stays logged in even after closing the app
 export const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
 
-// Initialize Firestore database
 export const db = getFirestore(app);
 
 export default app;

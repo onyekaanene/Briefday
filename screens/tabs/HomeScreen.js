@@ -1,19 +1,32 @@
 import React from "react";
 import { View, ScrollView, StyleSheet, SafeAreaView, Text } from "react-native";
+import { auth } from "../../config/firebase";
 import Greeting from "../../components/Greeting";
 import StatsCard from "../../components/StatsCard";
 import ActionButton from "../../components/buttons/ActionButton";
+import AIBriefing from "../../components/AIBriefing";
+import useTasks from "../../hooks/useTasks";
+import useMeetings from "../../hooks/useMeetings";
 import { COLORS, SPACING, FONTS } from "../../constants/theme";
 
 export default function HomeScreen({ navigation }) {
-  const userName = "Onyekachukwu";
-  const taskCount = 5;
-  const meetingCount = 2;
+  const { tasks } = useTasks();
+  const { meetings } = useMeetings();
+
+  const userName = auth.currentUser?.displayName || "there";
+  const taskCount = tasks.filter((t) => !t.completed).length;
+  const meetingCount = meetings.filter((m) => !m.completed).length;
 
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView style={styles.container}>
         <Greeting userName={userName} />
+
+        <AIBriefing
+          taskCount={taskCount}
+          meetingCount={meetingCount}
+          userName={userName}
+        />
 
         <View style={styles.statsSection}>
           <StatsCard
@@ -73,7 +86,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: SPACING.lg,
   },
   statsSection: {
-    marginTop: SPACING.lg,
+    marginTop: SPACING.md,
     marginBottom: SPACING.md,
   },
   sectionTitle: {

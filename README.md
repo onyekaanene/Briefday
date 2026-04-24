@@ -271,10 +271,13 @@ Full guide: [Expo EAS Build Docs](https://docs.expo.dev/build/introduction/)
 
 ## 🗺️ Roadmap
 
+### ✅ Completed
 - [x] Core task and meeting management
 - [x] Firebase authentication and cloud sync
 - [x] AI daily briefing
 - [x] AI task breakdown generator
+
+### 🔜 Coming Soon
 - [ ] Push notifications for task reminders
 - [ ] Map-In: Location-based check-ins for meetings
 - [ ] Team collaboration: Share tasks with teammates
@@ -286,22 +289,19 @@ Full guide: [Expo EAS Build Docs](https://docs.expo.dev/build/introduction/)
 
 ---
 
-## 💡 Key Learnings
+## 🙏 Acknowledgments
 
-Building Briefday taught me:
-- **Real-time database architecture** — Firestore listeners keep UI in sync without manual refreshes
-- **Mobile-first design patterns** — Bottom navigation, modal flows, optimistic updates
-- **AI API integration** — Structured prompts, error handling, fallback to mock data
-- **React Native performance** — FlatList virtualization, memo patterns, avoiding unnecessary re-renders
-- **State management without Redux** — Custom hooks + React Context = clean, simple state
-- **Production deployment** — EAS Build process, environment variables, app store submission requirements
+- **Anthropic Claude** for powering the AI features
+- **Firebase** for authentication and real-time database
+- **Expo** for making React Native development a joy
+
+---
 
 ---
 
 ## 👨‍💻 Author
 
-**Onyekachukwu Anene** — Software Engineer (React Native / React / Next.js)
-
+**Built with ❤️ by Onyekachukwu Anene** — Software Engineer (React Native / React / Next.js)
 Currently building production-ready mobile and web apps. Available for freelance and full-time opportunities.
 
 [![GitHub](https://img.shields.io/badge/GitHub-onyekaanene-181717?style=flat&logo=github)](https://github.com/onyekaanene)
@@ -313,15 +313,3 @@ Currently building production-ready mobile and web apps. Available for freelance
 ## 📄 License
 
 MIT License — Feel free to fork, learn from, and build upon this project.
-
----
-
-## 🙏 Acknowledgments
-
-- **Anthropic Claude** for powering the AI features
-- **Firebase** for authentication and real-time database
-- **Expo** for making React Native development a joy
-
----
-
-**Built with ❤️ by Onyekachukwu Anene**

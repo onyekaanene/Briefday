@@ -36,6 +36,10 @@ Briefday is that app. It combines **React Native, Expo, Firebase, and Claude AI*
 ### Auth Flow
 ![Welcome, Login, Signup & Reset Screens](screenshots/auth.png)
 
+### Main App
+![Dashboard, AI Briefing & Tasks](screenshots/dashboard.png)
+![Meetings, Comming Soon](meetings/meetings.png)
+
 ---
 
 ## 🎬 App Walkthrough
@@ -158,6 +162,34 @@ Briefday/
 
 ---
 
+## 🗺️ Roadmap
+
+### ✅ Completed
+- [x] Core task and meeting management
+- [x] Firebase authentication and cloud sync
+- [x] AI daily briefing
+- [x] AI task breakdown generator
+
+### 🔜 Coming Soon
+- [ ] Push notifications for task reminders
+- [ ] Map-In: Location-based check-ins for meetings
+- [ ] Team collaboration: Share tasks with teammates
+- [ ] Natural language task entry ("Call John tomorrow at 3pm")
+- [ ] Weekly/monthly productivity reports
+- [ ] Google Calendar integration
+- [ ] Dark mode
+- [ ] iOS TestFlight beta
+
+---
+
+## 🙏 Acknowledgments
+
+- **Anthropic Claude** for powering the AI features
+- **Firebase** for authentication and real-time database
+- **Expo** for making React Native development a joy
+
+---
+
 ## 🏃 Running Locally
 
 ### Prerequisites
@@ -269,34 +301,6 @@ Full guide: [Expo EAS Build Docs](https://docs.expo.dev/build/introduction/)
 
 ---
 
-## 🗺️ Roadmap
-
-### ✅ Completed
-- [x] Core task and meeting management
-- [x] Firebase authentication and cloud sync
-- [x] AI daily briefing
-- [x] AI task breakdown generator
-
-### 🔜 Coming Soon
-- [ ] Push notifications for task reminders
-- [ ] Map-In: Location-based check-ins for meetings
-- [ ] Team collaboration: Share tasks with teammates
-- [ ] Natural language task entry ("Call John tomorrow at 3pm")
-- [ ] Weekly/monthly productivity reports
-- [ ] Google Calendar integration
-- [ ] Dark mode
-- [ ] iOS TestFlight beta
-
----
-
-## 🙏 Acknowledgments
-
-- **Anthropic Claude** for powering the AI features
-- **Firebase** for authentication and real-time database
-- **Expo** for making React Native development a joy
-
----
-
 ## 👨‍💻 Author
 
 **Built with ❤️ by Onyekachukwu Anene** — Software Engineer (React Native / React / Next.js).
@@ -304,7 +308,7 @@ Currently building production-ready mobile and web apps. Available for freelance
 
 [![GitHub](https://img.shields.io/badge/GitHub-onyekaanene-181717?style=flat&logo=github)](https://github.com/onyekaanene)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/onyekachukwu-anene)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat)](https://onyekaanene.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat)](https://www.onyekaanene.com/projects)
 
 ---
 

@@ -297,11 +297,9 @@ Full guide: [Expo EAS Build Docs](https://docs.expo.dev/build/introduction/)
 
 ---
 
----
-
 ## 👨‍💻 Author
 
-**Built with ❤️ by Onyekachukwu Anene** — Software Engineer (React Native / React / Next.js)
+**Built with ❤️ by Onyekachukwu Anene** — Software Engineer (React Native / React / Next.js).
 Currently building production-ready mobile and web apps. Available for freelance and full-time opportunities.
 
 [![GitHub](https://img.shields.io/badge/GitHub-onyekaanene-181717?style=flat&logo=github)](https://github.com/onyekaanene)

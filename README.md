@@ -1,6 +1,6 @@
 # 📅 Briefday — AI-Powered Productivity App
 
-> A React Native mobile app that helps you organize your day with intelligent task management, meeting scheduling, and personalized AI briefings — built to solve my own productivity struggles.
+> An AI powered React Native mobile app that helps you organize your day with intelligent task management, meeting scheduling, and personalized AI briefings — built to solve my own productivity struggles.
 
 > 🎥 **Live Demo Available** — Download the Expo preview link to test on your device instantly.
 
@@ -304,8 +304,7 @@ Full guide: [Expo EAS Build Docs](https://docs.expo.dev/build/introduction/)
 
 ## 👨‍💻 Author
 
-**Built with ❤️ by Onyekachukwu Anene** — Software Engineer (React Native / React / Next.js).
-Currently building production-ready mobile and web apps. Available for freelance and full-time opportunities.
+**Built with ❤️ by Onyekachukwu Anene** — Software Engineer (Applied AI & SaaS) | Building AI-powered web & mobile products. Available for freelance and full-time opportunities.
 
 [![GitHub](https://img.shields.io/badge/GitHub-onyekaanene-181717?style=flat&logo=github)](https://github.com/onyekaanene)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/onyekachukwu-anene)

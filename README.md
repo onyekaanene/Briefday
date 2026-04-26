@@ -78,7 +78,7 @@ Framework      React Native (Expo SDK 52)
 Language       JavaScript
 Auth           Firebase Authentication
 Database       Cloud Firestore with real-time sync
-AI Engine      Anthropic Claude Sonnet 4
+AI Engine      Anthropic claude-haiku-4-5
 UI Library     React Native Components + Expo Vector Icons
 Date Handling  Day.js
 Navigation     React Navigation (Stack + Bottom Tabs)

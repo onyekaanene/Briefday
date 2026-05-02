@@ -2,7 +2,13 @@ eas build -p android --profile preview# 📅 Briefday — AI-Powered Productivit
 
 > An AI powered React Native mobile app that helps you organize your day with intelligent task management, meeting scheduling, and personalized AI briefings — built to solve my own productivity struggles.
 
-> 🎥 **🔗 Live Link:** Open the URL below to install it on a device. [https://expo.dev/accounts/onyekaspen/projects/briefday/builds/3e66d5d9-25c3-42fa-87d5-f3b07abb2feb](https://expo.dev/accounts/onyekaspen/projects/briefday/builds/3e66d5d9-25c3-42fa-87d5-f3b07abb2feb)—  
+> 🎥 **🔗 Live Link (Android):** Open the URL below to install it on a device. [https://expo.dev/accounts/onyekaspen/projects/briefday/builds/3e66d5d9-25c3-42fa-87d5-f3b07abb2feb](https://expo.dev/accounts/onyekaspen/projects/briefday/builds/3e66d5d9-25c3-42fa-87d5-f3b07abb2feb)—  
+
+
+**Important: How to install this build on Android**
+
+On devices running Android 8.0 (API level 26) and higher, you must navigate to the Install unknown apps system settings screen to enable app installations from a particular location (i.e. the web browser you are downloading the app from).
+On devices running Android 7.1.1 (API level 25) and lower, you should enable the Unknown sources system setting, found in Settings > Security on your device.
 
 ---
 

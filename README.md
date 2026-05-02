@@ -1,4 +1,4 @@
-eas build -p android --profile preview# 📅 Briefday — AI-Powered Productivity App
+# 📅 Briefday — AI-Powered Productivity App
 
 > An AI powered React Native mobile app that helps you organize your day with intelligent task management, meeting scheduling, and personalized AI briefings — built to solve my own productivity struggles.
 

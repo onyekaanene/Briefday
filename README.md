@@ -1,6 +1,6 @@
 # 📅 Briefday — AI-Powered Productivity App
 
-> An AI powered React Native mobile app that helps you organize your day with intelligent task management, meeting scheduling, and personalized AI briefings — built to solve my own productivity struggles.
+> Briefday is an AI powered React Native mobile app that helps you organize your day with intelligent task management, meeting scheduling, and personalized AI briefings — built to solve my own productivity struggles.
 
 > 🎥 **🔗 Live Link (Android):** Open the URL below to install it on your device. [https://expo.dev/accounts/onyekaspen/projects/briefday/builds/3e66d5d9-25c3-42fa-87d5-f3b07abb2feb](https://expo.dev/accounts/onyekaspen/projects/briefday/builds/3e66d5d9-25c3-42fa-87d5-f3b07abb2feb)—  
 

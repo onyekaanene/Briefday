@@ -18,6 +18,7 @@ import { auth } from "../../config/firebase";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import { COLORS, FONTS, SPACING } from "../../constants/theme";
 
+// This is the login screen of the application. It allows users to log in using their email and password. It also provides navigation to the signup and password reset screens.
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

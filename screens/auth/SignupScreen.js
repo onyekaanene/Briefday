@@ -18,6 +18,7 @@ import { auth } from "../../config/firebase";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import { COLORS, FONTS, SPACING } from "../../constants/theme";
 
+// This is the signup screen of the application. It allows users to create a new account by providing their full name, email, and password. It also includes validation for input fields and provides navigation to the login screen for existing users.
 export default function SignupScreen({ navigation }) {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");

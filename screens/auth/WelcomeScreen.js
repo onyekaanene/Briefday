@@ -11,6 +11,7 @@ import {
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import { COLORS, FONTS, SPACING } from "../../constants/theme";
 
+// This is the welcome screen of the application. It serves as the first screen users see when they open the app. It provides an overview of the app's features and offers navigation to the signup and login screens.
 export default function WelcomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>

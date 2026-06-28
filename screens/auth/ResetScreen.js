@@ -15,6 +15,7 @@ import { auth } from "../../config/firebase";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import { COLORS, FONTS, SPACING } from "../../constants/theme";
 
+// This is the password reset screen of the application. It allows users to request a password reset link by entering their email address. After submitting, it shows a confirmation message and provides navigation back to the login screen.
 export default function ResetScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
